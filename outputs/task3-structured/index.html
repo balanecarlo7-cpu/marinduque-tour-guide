@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A demonstration tourism guide for exploring Marinduque heritage, nature, beaches, and food.">
+  <title>Marinduque Heritage & Eco-Tour Guide</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a class="brand" href="#top">Marinduque Guide</a>
+      <div class="nav-links">
+        <a href="#destinations">Destinations</a>
+        <a href="#itinerary">Itinerary</a>
+      </div>
+    </nav>
+    <div class="hero container" id="top">
+      <p class="eyebrow">Tourism & Cultural Innovation</p>
+      <h1>Discover the heart of Marinduque</h1>
+      <p class="hero-text">A simple demonstration guide for residents, students, and visitors exploring local heritage, nature, beaches, and food.</p>
+      <a class="button button-primary" href="#destinations">Explore destinations</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="section container" id="destinations" aria-labelledby="destinations-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Plan your visit</p>
+          <h2 id="destinations-title">Featured destinations</h2>
+        </div>
+        <p class="demo-note">Demonstration content for classroom use</p>
+      </div>
+
+      <div class="filter-panel" aria-label="Destination filters">
+        <label for="category-filter">Filter by category</label>
+        <select id="category-filter">
+          <option value="all">All destinations</option>
+          <option value="heritage">Heritage</option>
+          <option value="nature">Nature</option>
+          <option value="beach">Beach</option>
+          <option value="food">Food</option>
+        </select>
+        <p id="result-count" class="result-count" aria-live="polite"></p>
+      </div>
+
+      <div id="destination-grid" class="destination-grid" aria-live="polite"></div>
+      <p id="empty-state" class="empty-state" hidden>No destinations match this category yet.</p>
+    </section>
+
+    <section class="section section-alt" id="itinerary" aria-labelledby="itinerary-title">
+      <div class="container itinerary-layout">
+        <div>
+          <p class="eyebrow">Sample plan</p>
+          <h2 id="itinerary-title">One-day visit checklist</h2>
+          <p>Use this demonstration checklist to organize a simple cultural and nature-focused visit.</p>
+        </div>
+        <div class="checklist-card">
+          <div class="progress-row">
+            <span id="progress-text">0 of 4 completed</span>
+            <button class="text-button" id="clear-checklist" type="button">Clear checklist</button>
+          </div>
+          <ul class="checklist" id="checklist">
+            <li><label><input type="checkbox"> Start with a heritage walk in Boac.</label></li>
+            <li><label><input type="checkbox"> Visit a nature or coastal attraction.</label></li>
+            <li><label><input type="checkbox"> Try a locally inspired food item.</label></li>
+            <li><label><input type="checkbox"> Review responsible-tourism reminders.</label></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p><strong>Marinduque Heritage & Eco-Tour Guide</strong></p>
+      <p>Educational prototype only. Verify travel details with official local sources before visiting.</p>
+    </div>
+  </footer>
+</body>
+</html>
